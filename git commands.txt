@@ -1,0 +1,22 @@
+git config --global user.name "amitAIT"  // github username
+git config --global user.email "github email"
+-- create a folder and make the folder as the present directory 
+git init        // everything is stored in this folder  , one time when starting a new project
+
+
+// 1 . Staging  2. Commiting  3. Pushing
+
+git log    	// details of commits
+git status  //  activities of the repository 
+git add .   // to stage the contents of the present directory
+git commit -m "First commmit"   // -m = message for the user 
+git remote add origin 'github link'   //  to link the offline folder to github repo
+git push -u origin master         // -u = upstream  -f = forcefully  origin = remote name    master = branch name
+
+git branch   // * = current branch 
+
+// Reset
+
+git reset HEAD~1  // ~num  = number of times the head needs to go back
+git reset <first 7 value>  
+git checkout .   // come back to the commit pointed by the head
